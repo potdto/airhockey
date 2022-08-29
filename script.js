@@ -47,8 +47,8 @@ function draw() {
 
 
     myMallet.setPos(
-        constrain(mouseX, myMallet.radius*2, width - myMallet.radius*2),
-        constrain(mouseY, height / 2 + myMallet.radius, height - myMallet.radius * 2 + puck.radius * 2)
+        constrain(mouseX, myMallet.radius, width - myMallet.radius),
+        constrain(mouseY, height / 2 + myMallet.radius, height - myMallet.radius)
     );
 
     puck.malletCollisionLogic(opponentMallet);
